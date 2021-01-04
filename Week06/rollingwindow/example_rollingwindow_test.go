@@ -23,6 +23,9 @@ func ExampleRollingWindow_Add() {
 	time.Sleep(duration)
 	r.Add(3)
 	fmt.Println(listBuckets())
+	time.Sleep(3 * duration)
+	fmt.Println(listBuckets())
 	// Output:
 	// [1 2 3]
+	// []
 }
